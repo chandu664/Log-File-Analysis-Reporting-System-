@@ -1,8 +1,3 @@
-"""
-Configuration Management Module
-Handles database credentials and application settings
-"""
-
 import os
 import configparser
 from pathlib import Path
@@ -281,19 +276,19 @@ def test_config():
     
     # Test validation
     is_valid = config.validate_config()
-    print(f"✓ Configuration validation: {'PASSED' if is_valid else 'FAILED'}")
+    print(f"Configuration validation: {'PASSED' if is_valid else 'FAILED'}")
     
     # Test getting configurations
     db_config = config.get_database_config()
-    print(f"✓ Database config loaded: {len(db_config)} parameters")
+    print(f"Database config loaded: {len(db_config)} parameters")
     
     app_config = config.get_application_config()
-    print(f"✓ Application config loaded: {len(app_config)} parameters")
+    print(f"Application config loaded: {len(app_config)} parameters")
     
     # Test updating configuration
     config.update_application_config(default_batch_size=2000)
     updated_config = config.get_application_config()
-    print(f"✓ Configuration updated: batch_size = {updated_config['default_batch_size']}")
+    print(f"Configuration updated: batch_size = {updated_config['default_batch_size']}")
     
     # Print configuration (hiding password)
     config.print_config()
@@ -301,7 +296,7 @@ def test_config():
     # Clean up test file
     if os.path.exists('test_config.ini'):
         os.remove('test_config.ini')
-        print("✓ Test configuration file cleaned up")
+        print("Test configuration file cleaned up")
 
 
 if __name__ == "__main__":

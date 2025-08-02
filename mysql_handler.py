@@ -1,8 +1,3 @@
-"""
-MySQL Handler Module
-Manages MySQL database connections and operations for log data
-"""
-
 import mysql.connector
 from mysql.connector import Error
 import logging

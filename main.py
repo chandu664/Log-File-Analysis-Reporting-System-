@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Log File Analysis & Reporting System
-Main application entry point and CLI setup
-"""
-
 import sys
 import os
 import logging

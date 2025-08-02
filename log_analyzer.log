@@ -305,3 +305,24 @@
 2025-08-02 16:45:09,966 - INFO - Successfully connected to MySQL database
 2025-08-02 16:45:10,050 - INFO - Database tables created successfully
 2025-08-02 16:45:10,063 - INFO - Database connection closed
+2025-08-02 17:05:47,535 - INFO - Configuration loaded from config.ini
+2025-08-02 17:05:47,823 - INFO - package: mysql.connector.plugins
+2025-08-02 17:05:47,824 - INFO - plugin_name: caching_sha2_password
+2025-08-02 17:05:47,829 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-08-02 17:05:47,887 - INFO - Successfully connected to MySQL database
+2025-08-02 17:05:47,956 - INFO - Database tables created successfully
+2025-08-02 17:05:47,966 - INFO - Database connection closed
+2025-08-02 17:05:56,758 - INFO - Configuration loaded from config.ini
+2025-08-02 17:05:56,943 - INFO - package: mysql.connector.plugins
+2025-08-02 17:05:56,944 - INFO - plugin_name: caching_sha2_password
+2025-08-02 17:05:56,947 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-08-02 17:05:56,952 - INFO - Successfully connected to MySQL database
+2025-08-02 17:05:56,964 - INFO - Database tables created successfully
+2025-08-02 17:05:57,037 - INFO - Database connection closed
+2025-08-02 17:07:46,322 - INFO - Configuration loaded from config.ini
+2025-08-02 17:07:46,489 - INFO - package: mysql.connector.plugins
+2025-08-02 17:07:46,490 - INFO - plugin_name: caching_sha2_password
+2025-08-02 17:07:46,493 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-08-02 17:07:46,498 - INFO - Successfully connected to MySQL database
+2025-08-02 17:07:46,507 - INFO - Database tables created successfully
+2025-08-02 17:07:46,515 - INFO - Database connection closed

@@ -1,8 +1,3 @@
-"""
-Log Parser Module
-Handles parsing of Apache Common Log Format entries using regular expressions
-"""
-
 import re
 import logging
 from datetime import datetime
@@ -200,9 +195,9 @@ def test_parser():
         print(f"\nTest {i}: {line[:50]}...")
         result = parser.parse_line(line)
         if result:
-            print(f"✓ Parsed successfully: {result['method']} {result['path']} -> {result['status_code']}")
+            print(f"Parsed successfully: {result['method']} {result['path']} -> {result['status_code']}")
         else:
-            print("✗ Failed to parse")
+            print("Failed to parse")
     
     stats = parser.get_stats()
     print(f"\nParsing Statistics:")

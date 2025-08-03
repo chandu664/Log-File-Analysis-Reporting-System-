@@ -178,6 +178,52 @@ The schema includes optimized indexes for common query patterns:
 - **Composite Indexes**: `(timestamp, status_code)`, `(ip_address, timestamp)`
 - **Unique Constraints**: `log_hash`, `user_agent_string`
 
+### Implementation methodology
+
+# ELT Pipeline Implementation
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                    ELT PROCESS ARCHITECTURE                         │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  ┌─────────────────────────────────────────────────────────────────┐ │
+│  │                     EXTRACT PHASE                              │ │
+│  │                                                                 │ │
+│  │  ┌─────────────┐    ┌─────────────┐    ┌─────────────────┐    │ │
+│  │  │ Log Files   │───▶│File Reading │───▶│ Basic Parsing   │    │ │
+│  │  │ • access.log│    │• Streaming  │    │ • Regex Match   │    │ │
+│  │  │ • error.log │    │• Line-by-   │    │ • Field Extract │    │ │
+│  │  │ • custom    │    │  line       │    │ • Data Types    │    │ │
+│  │  └─────────────┘    └─────────────┘    └─────────────────┘    │ │
+│  └─────────────────────────────────────────────────────────────────┘ │
+│                                    │                                 │
+│                                    ▼                                 │
+│  ┌─────────────────────────────────────────────────────────────────┐ │
+│  │                      LOAD PHASE                                │ │
+│  │                                                                 │ │
+│  │  ┌─────────────┐    ┌─────────────┐    ┌─────────────────┐    │ │
+│  │  │Raw Data     │───▶│Batch Insert │───▶│  MySQL Database │    │ │
+│  │  │Preparation  │    │• Bulk Ops   │    │  • log_entries  │    │ │
+│  │  │• Minimal    │    │• Transaction│    │  • user_agents  │    │ │
+│  │  │  Validation │    │• Performance│    │  • Raw Storage  │    │ │
+│  │  └─────────────┘    └─────────────┘    └─────────────────┘    │ │
+│  └─────────────────────────────────────────────────────────────────┘ │
+│                                    │                                 │
+│                                    ▼                                 │
+│  ┌─────────────────────────────────────────────────────────────────┐ │
+│  │                   TRANSFORM PHASE                              │ │
+│  │                                                                 │ │
+│  │  ┌─────────────┐    ┌─────────────┐    ┌─────────────────┐    │ │
+│  │  │SQL Queries  │───▶│Aggregations │───▶│ Business Logic  │    │ │
+│  │  │• JOINs      │    │• GROUP BY   │    │ • Reports       │    │ │
+│  │  │• CTEs       │    │• SUM/COUNT  │    │ • Analytics     │    │ │
+│  │  │• Views      │    │• Window Fn  │    │ • Insights      │    │ │
+│  │  └─────────────┘    └─────────────┘    └─────────────────┘    │ │
+│  └─────────────────────────────────────────────────────────────────┘ │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
 ## CLI Usage Guide
 
 ### Basic Commands

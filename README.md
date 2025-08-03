@@ -14,7 +14,7 @@ A comprehensive Python-based tool for parsing, analyzing, and generating reports
 - **CLI Interface**: Easy-to-use command-line interface for all operations
 
 ## Architecture
-
+```
 ┌─────────────────┐    ┌──────────────┐    ┌─────────────────┐
 │   Log Files     │───▶│ Log Parser   │───▶│ MySQL Database │
 │ (Apache Format) │    │ (Regex)      │    │ (Normalized)    │
@@ -26,7 +26,7 @@ A comprehensive Python-based tool for parsing, analyzing, and generating reports
                     │ & Validation     │    │ (SQL Queries)   │
                     └──────────────────┘    └─────────────────┘
 
-
+```
 ## Installation & Setup
 
 ### Prerequisites

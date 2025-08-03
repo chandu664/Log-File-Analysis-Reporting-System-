@@ -87,7 +87,7 @@ database = weblogs_db
 port = 3306
 ```
 
-### 5. Verify Installation
+### 4. Verify Installation
 
 ```
 python main.py --help
@@ -282,7 +282,7 @@ python main.py generate_report traffic_by_os
 python main.py generate_report error_logs_by_date 2023-10-10
 ```
 
-#### 3. Real-time Log Monitoring
+#### Real-time Log Monitoring
 
 ```
 # Monitor log file for new entries (checks every 5 seconds)

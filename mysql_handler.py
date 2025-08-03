@@ -575,7 +575,7 @@ def test_mysql_handler():
         
         # Test table creation
         handler.create_tables()
-        print("✓ Tables created successfully")
+        print("Tables created successfully")
         
         # Test sample data insertion
         sample_data = {
@@ -591,20 +591,20 @@ def test_mysql_handler():
         
         success = handler.insert_log_entry(sample_data)
         if success:
-            print("✓ Sample data inserted successfully")
+            print(" Sample data inserted successfully")
         
         # Test reporting
         top_ips = handler.get_top_n_ips(5)
-        print(f"✓ Top IPs query returned {len(top_ips)} results")
+        print(f"Top IPs query returned {len(top_ips)} results")
         
         stats = handler.get_database_stats()
-        print(f"✓ Database stats: {stats}")
+        print(f"Database stats: {stats}")
         
         handler.close()
-        print("✓ Connection closed successfully")
+        print("Connection closed successfully")
         
     except Exception as e:
-        print(f"✗ Test failed: {str(e)}")
+        print(f"Test failed: {str(e)}")
 
 
 if __name__ == "__main__":

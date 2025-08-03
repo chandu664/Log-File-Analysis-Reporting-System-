@@ -38,7 +38,7 @@ class LogParser:
                 self.error_count += 1
                 return None
             
-            # Extract matched groups
+            # Extract and convert groups
             ip_address = match.group(1)
             timestamp_str = match.group(2)
             request = match.group(3)

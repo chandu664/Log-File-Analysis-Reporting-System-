@@ -1,3 +1,4 @@
+-- Try in Mysql Workbench to get the results
 
 # creating the database
 CREATE DATABASE weblogs_db;

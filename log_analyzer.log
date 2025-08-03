@@ -326,3 +326,73 @@
 2025-08-02 17:07:46,498 - INFO - Successfully connected to MySQL database
 2025-08-02 17:07:46,507 - INFO - Database tables created successfully
 2025-08-02 17:07:46,515 - INFO - Database connection closed
+2025-08-03 16:55:06,294 - INFO - Configuration loaded from config.ini
+2025-08-03 16:55:06,724 - INFO - package: mysql.connector.plugins
+2025-08-03 16:55:06,725 - INFO - plugin_name: caching_sha2_password
+2025-08-03 16:55:06,731 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-08-03 16:55:06,794 - INFO - Successfully connected to MySQL database
+2025-08-03 16:55:06,871 - INFO - Database tables created successfully
+2025-08-03 16:55:06,883 - INFO - Database connection closed
+2025-08-03 16:56:22,133 - INFO - Configuration loaded from config.ini
+2025-08-03 16:56:22,337 - INFO - package: mysql.connector.plugins
+2025-08-03 16:56:22,338 - INFO - plugin_name: caching_sha2_password
+2025-08-03 16:56:22,341 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-08-03 16:56:22,356 - INFO - Successfully connected to MySQL database
+2025-08-03 16:56:22,378 - INFO - Database tables created successfully
+2025-08-03 16:56:22,386 - INFO - Processing log file: sample_logs/access.log
+2025-08-03 16:56:22,441 - WARNING - Malformed log line: malformed log line without proper format - this should be skipped
+2025-08-03 16:56:22,443 - WARNING - Invalid timestamp in log line: 127.0.0.5 - - [invalid-timestamp] "GET /test HTTP/1.1" 200 1234 "-" "-"
+2025-08-03 16:56:22,444 - WARNING - Malformed log line: - incomplete log entry
+2025-08-03 16:56:22,552 - INFO - Successfully inserted 0 log entries
+2025-08-03 16:56:22,552 - INFO - Finished processing log file. Total lines loaded: 51
+2025-08-03 16:56:22,553 - INFO - Database connection closed
+2025-08-03 16:57:41,351 - INFO - Configuration loaded from config.ini
+2025-08-03 16:57:41,593 - INFO - package: mysql.connector.plugins
+2025-08-03 16:57:41,594 - INFO - plugin_name: caching_sha2_password
+2025-08-03 16:57:41,597 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-08-03 16:57:41,603 - INFO - Successfully connected to MySQL database
+2025-08-03 16:57:41,620 - INFO - Database tables created successfully
+2025-08-03 16:57:41,627 - ERROR - Log file not found: /var/log/apache2/access.log
+2025-08-03 16:57:41,628 - INFO - Database connection closed
+2025-08-03 17:23:43,172 - INFO - Configuration loaded from config.ini
+2025-08-03 17:23:43,440 - INFO - package: mysql.connector.plugins
+2025-08-03 17:23:43,440 - INFO - plugin_name: caching_sha2_password
+2025-08-03 17:23:43,444 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-08-03 17:23:43,452 - INFO - Successfully connected to MySQL database
+2025-08-03 17:23:43,469 - INFO - Database tables created successfully
+2025-08-03 17:23:43,479 - INFO - Database connection closed
+2025-08-03 17:23:46,910 - INFO - Configuration loaded from config.ini
+2025-08-03 17:23:47,106 - INFO - package: mysql.connector.plugins
+2025-08-03 17:23:47,107 - INFO - plugin_name: caching_sha2_password
+2025-08-03 17:23:47,110 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-08-03 17:23:47,112 - INFO - Successfully connected to MySQL database
+2025-08-03 17:23:47,121 - INFO - Database tables created successfully
+2025-08-03 17:23:47,131 - INFO - Processing log file: sample_logs/access.log
+2025-08-03 17:23:47,142 - WARNING - Malformed log line: malformed log line without proper format - this should be skipped
+2025-08-03 17:23:47,143 - WARNING - Invalid timestamp in log line: 127.0.0.5 - - [invalid-timestamp] "GET /test HTTP/1.1" 200 1234 "-" "-"
+2025-08-03 17:23:47,143 - WARNING - Malformed log line: - incomplete log entry
+2025-08-03 17:23:47,185 - INFO - Successfully inserted 0 log entries
+2025-08-03 17:23:47,186 - INFO - Finished processing log file. Total lines loaded: 51
+2025-08-03 17:23:47,187 - INFO - Database connection closed
+2025-08-03 20:14:48,284 - INFO - Configuration loaded from config.ini
+2025-08-03 20:14:48,763 - INFO - package: mysql.connector.plugins
+2025-08-03 20:14:48,763 - INFO - plugin_name: caching_sha2_password
+2025-08-03 20:14:48,768 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-08-03 20:14:48,832 - INFO - Successfully connected to MySQL database
+2025-08-03 20:14:48,906 - INFO - Database tables created successfully
+2025-08-03 20:14:48,957 - INFO - Database connection closed
+2025-08-03 20:18:22,729 - INFO - Configuration loaded from config.ini
+2025-08-03 20:18:22,931 - INFO - package: mysql.connector.plugins
+2025-08-03 20:18:22,932 - INFO - plugin_name: caching_sha2_password
+2025-08-03 20:18:22,934 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-08-03 20:18:22,938 - INFO - Successfully connected to MySQL database
+2025-08-03 20:18:22,953 - INFO - Database tables created successfully
+2025-08-03 20:18:22,997 - INFO - Database connection closed
+2025-08-03 20:20:31,400 - INFO - Configuration loaded from config.ini
+2025-08-03 20:20:31,641 - INFO - package: mysql.connector.plugins
+2025-08-03 20:20:31,642 - INFO - plugin_name: caching_sha2_password
+2025-08-03 20:20:31,645 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-08-03 20:20:31,651 - INFO - Successfully connected to MySQL database
+2025-08-03 20:20:31,662 - INFO - Database tables created successfully
+2025-08-03 20:20:31,669 - ERROR - Log file not found: /var/log/apache2/access.log
+2025-08-03 20:20:31,670 - INFO - Database connection closed

@@ -178,7 +178,7 @@ The schema includes optimized indexes for common query patterns:
 - **Composite Indexes**: `(timestamp, status_code)`, `(ip_address, timestamp)`
 - **Unique Constraints**: `log_hash`, `user_agent_string`
 
-### Implementation methodology
+## Implementation methodology
 
 # ELT Pipeline Implementation
 
